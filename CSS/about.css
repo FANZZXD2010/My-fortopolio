@@ -1,0 +1,280 @@
+:root {
+  --color-1-: #22d3ee;
+  --color-2-: #0b1120;
+}
+
+/* NAVBAR */
+
+body {
+  color: white;
+  background-color: #0b1120;
+}
+
+.container .navbar {
+  height: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* position: fixed; */
+}
+
+.container .navbar .textandlogo {
+  display: flex;
+  align-items: center;
+}
+
+.container .navbar .textandlogo .logo {
+  background-image: url(../IMG/hitam-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 70px;
+  height: 70px;
+}
+
+.container .navbar .textandlogo h2 {
+  font-family: "Poppins";
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.container .navbar .textandlogo h2 span {
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(to right, #22d3ee, #6922ee);
+}
+
+.container .navbar .link ul {
+  display: flex;
+  list-style: none;
+  margin-right: 15px;
+  font-family: "Poppins";
+  font-weight: 400;
+}
+
+.container .navbar .link ul li a {
+  text-decoration: none;
+  font-size: 12px;
+  color: white;
+  transition: 0.3s;
+}
+
+.container .navbar .link ul li a:hover {
+  color: #6922ee;
+}
+
+.container .navbar .link ul li {
+  margin-left: 10px;
+  padding-right: 10px;
+  border-right: 1px solid white;
+}
+
+.container .navbar .link ul li:last-of-type {
+  border: none;
+}
+
+/* NAVBAR DONE */
+
+/* ABOUT  */
+
+.container .about {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .about .sec-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .about .sec-about > div.img {
+  background-image: url(../IMG/FOTO.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 200px;
+  height: 200px;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 20px;
+}
+
+.container .about .sec-about > div.img::after {
+  content: "";
+  border-radius: 20px;
+  z-index: -1;
+  position: absolute;
+  width: 102%;
+  height: 102%;
+  background-image: linear-gradient(to right, #22d3ee, #6922ee);
+}
+
+.container .about .sec-about p {
+  width: 400px;
+  text-shadow: 0px 1px 70px #6922ee;
+
+  text-align: justify;
+  font-family: "Ubuntu";
+  font-size: 15px;
+}
+
+.container .about .skils {
+  width: 600px;
+  /* text-align: center; */
+  font-family: "Ubuntu";
+  padding: 10px;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  border: 2px solid #6922ee;
+}
+
+.container .about .skils h2 {
+  /* margin-bottom: 20px; */
+  font-family: poppins;
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(to right, #22d3ee -10%, #6922ee 50%);
+
+  margin-left: 10px;
+}
+
+.container .about .skils .sec-skils {
+  display: flex;
+  flex-wrap: wrap;
+  /* width: 00px; */
+}
+
+.container .about .skils .sec-skils .html,
+.css,
+.python {
+  margin: 10px;
+}
+
+.container .about .skils .sec-skils .html h4,
+.css h4,
+.python h4 {
+  padding: 10px;
+  font-size: 10px;
+  /* border-bottom: 2px solid #dddddd51; */
+  border-bottom: 2px solid #22d3ee;
+  box-shadow: 0px 1px 3px #22d3ee;
+  background-color: #dddddd2c;
+  border-radius: 10px;
+}
+
+.container .about .cta {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid #6922ee;
+  width: 600px;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 10px;
+  font-family: "Roboto";
+}
+
+.container .about .cta a {
+  text-decoration: none;
+}
+
+.container .about .cta a .btncta {
+  padding: 10px;
+  color: white;
+  border: 2px solid rgb(174, 0, 255);
+  border-radius: 10px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.container .about .cta a .btncta:hover {
+  border: 2px solid #22d3ee;
+  transform: scale(1.05);
+}
+
+/* ABOUT DONE */
+
+/* FOOTER */
+
+.container .footer {
+  /* background-color: #457dff; */
+  margin-top: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .footer .logo {
+  background-image: url(../IMG/hitam-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 75px;
+  height: 75px;
+}
+
+.container .footer > p {
+  font-size: 11px;
+  font-family: "Poppins";
+}
+
+/* FOOTER DONE */
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 480px) {
+  .container .navbar {
+    justify-content: space-between;
+  }
+
+  .container .navbar .textandlogo .logo {
+    display: none;
+  }
+
+  .container .navbar .textandlogo h2 {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  .container .navbar .link ul li a {
+    font-size: 11px;
+  }
+
+  .container .navbar .link ul li {
+    margin-left: 8px;
+  }
+
+  .container .about .skils {
+    width: 74%;
+    margin-top: 20px;
+  }
+
+  .container .about .cta {
+    width: 74%;
+    margin-top: 20px;
+  }
+
+  .container .about .sec-about {
+    flex-direction: column;
+  }
+
+  .container .about .sec-about p {
+    width: 200px;
+    text-align: center;
+    text-shadow: 0px 1px 70px #6922ee;
+    /* font-size: 12px;
+    text-align: left;
+    margin-right: 20px; */
+  }
+}
+
+/* RESPONSIVE DONE */
