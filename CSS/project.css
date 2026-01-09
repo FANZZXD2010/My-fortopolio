@@ -318,6 +318,10 @@ p {
     width: 50%;
   } */
 
+  .container .project .sec-project .project1 {
+    flex-direction: column;
+  }
+
   .container .project .sec-project .project1 .keterangan,
   .container .project .sec-project .project1 .keterangan2,
   .container .project .sec-project .project1 .keterangan3 {
@@ -328,13 +332,14 @@ p {
   .container .project .sec-project .project1 .img2,
   .container .project .sec-project .project1 .img3 {
     width: 300px;
-    height: 80px;
+    height: 130px;
   }
 
   .container .project .sec-project .project1 .keterangan p,
   .container .project .sec-project .project1 .keterangan2 p,
   .container .project .sec-project .project1 .keterangan3 p {
-    width: 125px;
+    width: 200px;
+    margin-top: 20px;
     font-size: 11px;
   }
 }
