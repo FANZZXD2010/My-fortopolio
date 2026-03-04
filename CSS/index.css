@@ -78,12 +78,10 @@ body {
 /* NAVBAR DONE */
 
 /* HERO  */
-
+/* 
 .container .hero {
   margin: 0 auto;
   height: 100vh;
-  /* width: 800px; */
-  /* background-color: red; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -195,6 +193,125 @@ body {
 
 .container .hero .navigasi a .btn:hover {
   border: 2px solid #6922ee;
+} */
+
+.container .hero {
+  background-image: url(../IMG/BG-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 50px;
+  /* border: 0.5px solid white; */
+  border-radius: 50px;
+  box-shadow:
+    1px 1px 7px white,
+    -1px -1px 7px white;
+  /* cursor: pointer; */
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
+  display: flex;
+}
+
+.container .hero .contoh {
+  background-color: red;
+
+  /* width: 100%; */
+}
+
+.container .hero:hover {
+  transform: scale(0.99);
+}
+
+.container .hero .wrapper {
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.container .hero .wrapper > i {
+  margin: -30px 0 0 30px;
+  color: #cc22ee;
+  text-shadow:
+    1px 1px 35px white,
+    -1px -1px 35px white;
+}
+
+.container .hero .wrapper .text {
+  display: flex;
+  margin-left: 30px;
+}
+
+.container .hero .wrapper .text .text2 {
+  text-align: left;
+}
+
+.container .hero .wrapper .text .text2 h1 {
+  font-size: 65px;
+  font-weight: 400;
+  font-family: Poppins;
+}
+
+.container .hero .wrapper .text .text2 h1 span {
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #24e2ff, #7124ff);
+}
+
+.container .hero .wrapper .text .text2 p {
+  font-family: Ubuntu;
+}
+
+.container .hero .wrapper .text .text2 h1,
+p {
+  text-shadow: 5px 5px 250px white;
+}
+
+.container .hero .wrapper .ellipse {
+  width: 600px;
+  flex-wrap: wrap;
+  display: flex;
+  /* background-color: red; */
+}
+
+.container .hero .wrapper .ellipse .button1,
+.button2,
+.button3 {
+  width: 250px;
+  margin-top: 10px;
+  border-radius: 25px;
+  border: 3px solid white;
+  padding: 10px;
+  margin-left: 30px;
+  transition: 0.5s;
+}
+
+.container .hero .wrapper .ellipse .button1:hover,
+.button2:hover,
+.button3:hover {
+  border-color: #6922ee;
+}
+
+.container .hero .wrapper .ellipse .button1 a .ellipse2 p,
+.button2 a .ellipse2 p,
+.button3 a .ellipse2 p {
+  font-family: Roboto;
+}
+
+.container .hero .wrapper .ellipse .button1 a,
+.button2 a,
+.button3 a {
+  text-decoration: none;
+  color: white;
+}
+
+.container .hero .wrapper .ellipse .button1 a .ellipse2,
+.button2 a .ellipse2,
+.button3 a .ellipse2 {
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: space-around;
 }
 
 /* HERO DONE */
@@ -249,24 +366,43 @@ body {
     margin-left: 8px;
   }
 
-  .container .hero .header {
-    flex-direction: column;
+  .container .hero {
+    margin: 0;
+    border: none;
+    box-shadow: none;
+    background-image: url(../IMG/BG-3.png);
   }
 
-  .container .hero .header h1 {
-    font-size: 35px;
-    width: 350px;
-    margin-right: 0;
-    margin-left: 20px;
+  .container .hero .wrapper .text .text2 h1 {
+    font-size: 50px;
+    width: 300px;
   }
 
-  .container .hero .header .sec-header {
-    /* margin-left: 20px; */
-    margin-top: 20px;
+  .container .hero .wrapper .ellipse {
+    width: 400px;
+    flex-wrap: wrap;
+    display: flex;
+    /* background-color: red; */
   }
 
-  .container .hero .header .sec-header h2 {
-    width: 350px;
+  .container .hero .wrapper .ellipse .button1,
+  .button2,
+  .button3 {
+    width: 190px;
+    margin-top: 10px;
+    border-radius: 25px;
+    border: 3px solid white;
+    padding: 10px;
+    margin-left: 30px;
+    transition: 0.5s;
+    box-shadow: 0.2px 0.2px 7px white;
+  }
+
+  .container .hero .wrapper .ellipse .button1 a .ellipse2 p,
+  .button2 a .ellipse2 p,
+  .button3 a .ellipse2 p {
+    font-family: Roboto;
+    font-size: 12px;
   }
 }
 
