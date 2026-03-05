@@ -4,8 +4,8 @@
 }
 
 body {
-  height: 100vh;
   color: white;
+  /* height: 100vh; */
 }
 
 .container {
@@ -24,7 +24,7 @@ body {
 }
 
 .container a.home i {
-  margin-bottom: 50px;
+  margin-top: 50px;
   transition: 0.3s;
 }
 
@@ -36,7 +36,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   gap: 50px;
 }
 
@@ -94,4 +93,38 @@ body {
 
 .container .card .card2 .img {
   background-image: url(../IMG/Tambahkan\ judul.png);
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    background-image: url(../IMG/BG-5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .container a.home i {
+    /* margin-top: -10px; */
+  }
+
+  .container .card .card1 {
+    height: 180px;
+    width: 120px;
+  }
+
+  .container .card .card1 .img {
+    width: 75px;
+    height: 75px;
+  }
+
+  /* CARD 2 */
+
+  .container .card .card2 .img {
+    width: 75px;
+    height: 75px;
+  }
+
+  .container .card .card1 a .ig {
+    padding: 5px 20px 5px 20px;
+    font-size: 12px;
+  }
 }
