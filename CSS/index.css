@@ -3,21 +3,17 @@
   --color-2-: #0b1120;
 }
 
-/* NAVBAR */
-
 body {
   color: white;
   background-color: #0b1120;
 }
+/* NAVBAR */
 
-.container .navbar {
+/* .container .navbar {
   height: 5em;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border-bottom: 0.5px solid #162038;
-
-  /* position: fixed; */
 }
 
 .container .navbar .textandlogo {
@@ -73,7 +69,7 @@ body {
 
 .container .navbar .link ul li:last-of-type {
   border: none;
-}
+} */
 
 /* NAVBAR DONE */
 
@@ -199,7 +195,7 @@ body {
   background-image: url(../IMG/BG-1.png);
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 50px;
+  margin: 90px;
   /* border: 0.5px solid white; */
   border-radius: 50px;
   box-shadow:
@@ -260,6 +256,7 @@ body {
 
 .container .hero .wrapper .text .text2 p {
   font-family: Ubuntu;
+  font-size: 20px;
 }
 
 .container .hero .wrapper .text .text2 h1,
