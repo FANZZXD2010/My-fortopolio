@@ -2,13 +2,19 @@
   --color-1-: #22d3ee;
   --color-2-: #0b1120;
   --color-3-: #6922ee;
+  --color-4: #090905;
 }
 
 /* NAVBAR */
 
 body {
   color: white;
-  background-color: #0b1120;
+  background-color: black;
+  background-image: url(../IMG/BG-10.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px;
+  /* background-position: 100px 0; */
 }
 
 .container .navbar {
@@ -79,7 +85,7 @@ body {
 
 /* ABOUT  */
 
-.container .about {
+/* .container .about {
   padding: 10px;
   width: 70rem;
   position: relative;
@@ -93,7 +99,6 @@ body {
   z-index: 9999;
   width: 0.2rem;
   background-color: #162038;
-  /* bottom: -10px; */
   transform-origin: top;
   left: 100px;
   top: 10px;
@@ -220,7 +225,6 @@ body {
 
 .container .about .stack .stack {
   margin-left: 130px;
-  /* margin-top: 20px; */
 }
 
 .container .about .stack .stack h2 {
@@ -240,13 +244,235 @@ body {
   width: 300px;
   height: 500px;
   transform: rotate(-90deg);
+} */
+
+/* =================== IMG DAN CTA ====================== */
+
+.container .about {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+.container .about .header {
+  display: grid;
+  grid-template-columns: repeat(2, 23rem);
+}
+
+.container .about .header .imageANDcta {
+  padding: 10px;
+  /* place-items: center; */
+}
+
+.container .about .header .imageANDcta .img {
+  padding: 10px;
+  background-image: url(../IMG/FOTO.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 250px;
+  filter: brightness(105%);
+  border-radius: 20px;
+}
+
+.container .about .header .imageANDcta .cta .keterangan {
+  font-family: "Poppins";
+}
+
+.container .about .header .imageANDcta .cta .keterangan h2 {
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  margin-top: 20px;
+  margin-bottom: 2px;
+}
+
+.container .about .header .imageANDcta .cta .keterangan p {
+  letter-spacing: -0.5px;
+  font-size: 12px;
+  width: 255px;
+  /* text-align: justify; */
+  margin-bottom: 20px;
+}
+
+.container .about .header .imageANDcta .cta a .ctabtn {
+  width: 250px;
+  padding: 15px;
+  border-radius: 50px;
+  font-family: "Poppins";
+  font-size: 11px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: rgba(255, 255, 255, 0.94);
+}
+
+.container .about .header .imageANDcta .cta a .ctabtn:hover {
+  box-shadow:
+    0px 0px 2px white,
+    -0px -0px 2px white;
+}
+
+/* ============================ BIO ============================== */
+
+.container .about .header .bio {
+  text-decoration: none;
+}
+
+.container .about .header .bio h1 {
+  font-family: "Poppins";
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+.container .about .header .bio .list ul {
+  list-style: none;
+  font-family: "Poppins";
+}
+
+.container .about .header .bio .list ul li {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin: 2px 0 10px 0;
+}
+
+.container .about .header .bio .list ul li h3 {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.container .about .header .bio .list ul li:last-of-type {
+  margin-left: 10px;
+}
+
+.container .about .header .bio .tag ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  font-family: "Poppins";
+  font-size: 8px;
+}
+
+.container .about .header .bio .tag ul li {
+  padding: 7px;
+  border: 1px solid white;
+  border-radius: 25px;
+  width: 6rem;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.container .about .header .bio .sosmed h6 {
+  font-family: "Poppins";
+  color: rgba(255, 255, 255, 0.584);
+  margin-top: 20px;
+}
+
+.container .about .header .bio .sosmed .f-sosmed ul {
+  list-style: none;
+  font-family: "Poppins";
+}
+
+.container .about .header .bio .sosmed .f-sosmed ul li {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  margin-left: 10px;
+}
+
+.container .about .header .bio .sosmed .f-sosmed ul li:first-of-type {
+  margin-left: 0;
+}
+
+.container .about .about-me {
+  width: 46rem;
+  padding-top: 50px;
+}
+
+.container .about .about-me h3 {
+  font-family: "Poppins";
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.584);
+}
+
+.container .about .about-me p {
+  font-family: "Poppins";
+  margin-top: 10px;
+  font-size: calc(2 * h3);
+}
+
+.container .about .sertif {
+  width: 46rem;
+  padding-top: 50px;
+}
+
+.container .about .sertif h3 {
+  font-family: "Poppins";
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.584);
+}
+
+.container .about .sertif .link-sertif {
+  margin-left: 15px;
+}
+
+.container .about .sertif .link-sertif ul {
+  list-style: none;
+}
+
+.container .about .sertif .link-sertif ul li {
+  margin-top: 12px;
+}
+
+.container .about .sertif .link-sertif ul li a {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-family: "Poppins";
+  width: fit-content;
+  transition: 0.3s;
+}
+
+.container .about .sertif .link-sertif ul li a:hover {
+  color: #7226ffd3;
+}
+
+.container .about .vidio h3 {
+  margin-top: 20px;
+  font-family: "Poppins";
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.584);
+}
+
+.container .about .vidio {
+  width: 46rem;
+}
+
+.container .about .vidio .l-vidio {
+  display: flex;
+  width: 46rem;
+  flex-wrap: wrap;
+}
+
+.container .about .vidio .l-vidio .card1 {
+  width: 50px;
+  height: 100px;
+  background-color: rebeccapurple;
 }
 
 /* ABOUT DONE */
 
 /* FOOTER */
 
-/* .container .footer {
+.container .footer {
   margin-top: 100px;
   height: 100px;
   display: flex;
@@ -265,14 +491,14 @@ body {
 .container .footer > p {
   font-size: 11px;
   font-family: "Poppins";
-} */
+}
 
 /* FOOTER DONE */
 
 /* RESPONSIVE */
 
 @media screen and (max-width: 480px) {
-  .container .navbar {
+  /* .container .navbar {
     justify-content: space-between;
   }
 
@@ -352,6 +578,15 @@ body {
   .container .about .skils .stack .horizontal {
     margin-top: 10px;
   }
-}
+} */
 
+  .container .about {
+    display: none;
+  }
+
+  .container::before {
+    content: "MAAF SAAT INI MODE HANDPHONE BELUM BISA DI AKSES KARENA DALAM MASA PEMBUATAN :c ....";
+    color: white;
+  }
+}
 /* RESPONSIVE DONE */

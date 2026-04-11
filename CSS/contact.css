@@ -10,17 +10,28 @@
 
 body {
   color: white;
+  font-family: "Poppins";
+  background-image: url(../IMG/BG-9.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-color: black;
 }
 
 .container {
-  background-color: var(--color-1);
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  text-align: center;
+  /* background-color: var(--color-1); */
+  /* height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 
-.container .content {
+/* .container .content {
   background-image: url(../IMG/BG-1.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -45,4 +56,4 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-}
+} */
