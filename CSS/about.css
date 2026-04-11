@@ -246,8 +246,7 @@ body {
 
 /* FOOTER */
 
-.container .footer {
-  /* background-color: #457dff; */
+/* .container .footer {
   margin-top: 100px;
   height: 100px;
   display: flex;
@@ -266,7 +265,7 @@ body {
 .container .footer > p {
   font-size: 11px;
   font-family: "Poppins";
-}
+} */
 
 /* FOOTER DONE */
 
