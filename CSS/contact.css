@@ -3,128 +3,46 @@
   padding: 0;
 }
 
+:root {
+  --color-1: #0b1120;
+  --color-2: #22d3ee;
+}
+
 body {
   color: white;
-  /* height: 100vh; */
 }
 
 .container {
-  background-image: url(../IMG/BG-2.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  background-color: var(--color-1);
   height: 100vh;
-}
-
-.container a.home {
-  text-decoration: none;
-}
-
-.container a.home i {
-  margin-top: 50px;
-  transition: 0.3s;
-}
-
-.container a.home i:hover {
-  transform: translateY(-5px) scale(1.02);
-}
-
-.container .card {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
 }
 
-.container .card .card1 {
-  height: 270px;
-  width: 200px;
-  border: 3px solid #24e2ff;
-  border-radius: 24px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  /* box-shadow:
-    1px 1px 1px #41e6ff,
-    -1px -1px 1px #41e6ff; */
-}
-
-/* #24e2ff, #7124ff */
-
-.container .card .card1 a {
-  text-decoration: none;
-  color: white;
-}
-
-.container .card .card1 a .ig {
-  font-family: Poppins;
-  border-radius: 24px;
-  padding: 12px;
-  padding-left: 40px;
-  padding-right: 40px;
-  font-weight: 500;
-  cursor: pointer;
-  border: none;
-  border: 3px solid #0008ff;
-  color: white;
-  background-color: transparent;
-  transition: 0.3s;
-}
-
-.container .card .card1 a .ig:hover {
-  border-color: #0107cb;
-}
-
-.container .card .card1 .img {
-  background-image: url(../IMG/PROFIL_IG.jpg);
+.container .content {
+  background-image: url(../IMG/BG-1.png);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+  margin: 80px;
+  width: 90rem;
+  border-radius: 50px;
+  box-shadow:
+    1px 1px 7px white,
+    -1px -1px 7px white;
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
+  display: flex;
+  padding: 20px;
 }
 
-/* CARD 2 */
-
-.container .card .card2 .img {
-  background-image: url(../IMG/Tambahkan\ judul.png);
+.container .content:hover {
+  transform: scale(0.99);
 }
 
-@media screen and (max-width: 480px) {
-  .container {
-    background-image: url(../IMG/BG-5.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .container a.home i {
-    /* margin-top: -10px; */
-  }
-
-  .container .card .card1 {
-    height: 180px;
-    width: 120px;
-  }
-
-  .container .card .card1 .img {
-    width: 75px;
-    height: 75px;
-  }
-
-  /* CARD 2 */
-
-  .container .card .card2 .img {
-    width: 75px;
-    height: 75px;
-  }
-
-  .container .card .card1 a .ig {
-    padding: 5px 20px 5px 20px;
-    font-size: 12px;
-  }
+.container .content .wrapper-text {
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
